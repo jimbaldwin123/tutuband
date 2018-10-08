@@ -1,0 +1,140 @@
+	body {
+		font-family: arial, sans-serif;
+	}
+	a {
+		color:#008000;
+		text-decoration: underline;
+	}
+	a:hover {
+		color:#fff;
+		text-decoration: underline;
+	}
+
+	a.powered:hover{
+		color:#008000;
+	}
+	.announce {
+		text-align:left;
+	}
+	.atext {
+		text-align:left;
+		font-weight: bold;
+		font-size:24px;
+	}
+	.btext {
+		text-align:center;
+		font-weight: bold;
+		font-size:24px;
+	}
+
+	.head {
+		font-size:32px;
+	}
+	.msg{
+		font-size:16px;
+		font-weight:bold;
+	}
+
+	input.btn{
+	   margin-left:10px;
+	   color:#000;
+	   font-family:'trebuchet ms',helvetica,sans-serif;
+	   font-size:84%;
+	   font-weight:bold;
+	   background-color:#ff932e;
+	   border:1px solid #080;
+
+	}
+
+
+
+#nav {
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	list-style: none;
+	display: inline;
+	overflow: hidden;
+
+	margin: 0;
+	padding: 0;
+	height: 222px;
+
+	width: 200px;
+	}
+
+#nav li {
+	margin: 0;
+	padding: 0;
+
+	display: inline;
+	list-style-type: none;
+
+	}
+
+#nav a {
+	float: left;
+	padding: 222px 0 0 0;
+	overflow: hidden;
+	height: 222px !important;
+	height /**/:222px; /* for IE5/Win */
+	}
+
+	#mascara a {
+		width:200px;
+		background: url(http://www.tutuband.com/images/mascar~1t.gif) top left no-repeat;
+	}
+
+	#mascara a:hover {
+		width:200px;
+		background: url(http://www.tutuband.com/images/mascar2t.gif) top left no-repeat;
+	}
+
+	.preload {display:none;}
+	.invis {display:none;}
+#window1{
+	text-align:center;
+	z-index: 1000;
+	font-family:arial,sans-serif;
+	font-size: 12px;
+	height:800px;
+	padding-top:30px
+
+}
+
+#window_ref {
+	position: absolute;
+	top:0px;
+	left:400px;
+}
+
+.orange{
+	background: #f60;
+}
+.black{
+	background: #eee;
+}
+.white{
+	background: #fff;
+}
+
+#message{
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+	padding-top:30px;
+}
+h1 h2 {
+	text-align:center;
+	margin:auto;
+}
+/*mailchimp styles*/
+.asterisk{
+	color: #080 !important;
+	font-size: 26px !important;
+}
+.response{
+	color: #fff !important;
+}

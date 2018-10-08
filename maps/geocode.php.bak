@@ -1,0 +1,43 @@
+<?php
+
+	require_once('../domit/xml_domit_include.php');
+	$xmldoc =& new DOMIT_Document();
+	$xmldoc->useHTTPClient(true);
+
+
+ 	// Your Google Maps API key
+   $key = "ABQIAAAAXNSBX6JoRGTpNKpBGgz5tRQCMrxPBNJRrFSqKMtCy1wUhYIQnRRhR6vlOOG-AQKRXqTNNgNEctkEDA";
+
+   // Desired address
+   $address = "http://maps.google.com/maps/geo?q=411+Woody+Hayes+Drive,+Columbus,+OH&output=xml&key=$key";
+
+   $success = $xmldoc->loadXML($address,false);
+   print "#" . $success . "#" . $xmldoc->parsedBy() . "<br><br>";
+
+
+
+   $myDocumentElement =& $xmldoc->documentElement;
+	echo $myDocumentElement->toNormalizedString(true);
+
+	$matchingNodes =& $xmldoc->getElementsByTagName("address");
+	$coord = '"' . trim($matchingNodes->toString(false)) . '",';
+	$coord = str_replace('<address>','',$coord);
+	$coord = str_replace('</address>','',$coord);
+
+
+	$matchingNodes =& $xmldoc->getElementsByTagName("coordinates");
+	$coord .= $matchingNodes->toString(false);
+	$coord = str_replace('<coordinates>','',$coord);
+	$coord = str_replace('</coordinates>','',$coord);
+
+	print $coord;
+	/*
+	$answer = explode(',',$coord);
+	print_r($answer);
+	*/
+
+
+
+?>
+
+

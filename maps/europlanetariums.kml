@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+	<Folder>
+	  <name>Planetariums</name>
+	  <open>1</open>
+	  <description><![CDATA[Imaginova &trade; presents planetariums of the world.]]></description>
+
+<Placemark>
+<description><![CDATA[189 route du Parc Notre-Dame-des-Bois Canada J0B 2E0<br>]]></description>
+<name><![CDATA[ASTROLab du Mont-Megantic]]></name>
+<LookAt>
+  <longitude>-74.266600</longitude>
+  <latitude>46.042946</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>-74.266600,46.042946,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Peterholzstraße 58 Dessau Germany 06849<br>]]></description>
+<name><![CDATA[Astronomische Station Heinrich S. Schwabe]]></name>
+<LookAt>
+  <longitude>12.246623</longitude>
+  <latitude>51.803015</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>12.246623,51.803015,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Nelkenweg 6 Rostock Germany 18057<br>]]></description>
+<name><![CDATA[Astronomische Station Tycho Brahe Rostock]]></name>
+<LookAt>
+  <longitude>12.077695</longitude>
+  <latitude>54.086049</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>12.077695,54.086049,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[18, Ave. Marechal Foch Nice France 06000<br>]]></description>
+<name><![CDATA[Astrorama, Association PARSEC]]></name>
+<LookAt>
+  <longitude>7.270276</longitude>
+  <latitude>43.703739</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>7.270276,43.703739,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[4, ave. Windsor Cannes France 06400<br>]]></description>
+<name><![CDATA[Club Arts, Sciences, Solidarité, planetarium]]></name>
+<LookAt>
+  <longitude>7.030734</longitude>
+  <latitude>43.551380</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>7.030734,43.551380,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[205 Rinquet Three Rivers Canada G9A 3C6<br>]]></description>
+<name><![CDATA[Le Verrier Planétarium]]></name>
+<LookAt>
+  <longitude>-73.581518</longitude>
+  <latitude>45.661762</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>-73.581518,45.661762,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[La Citadelle Besançon France 25000<br>]]></description>
+<name><![CDATA[Muséum d'Histoire Naturelle, planétarium]]></name>
+<LookAt>
+  <longitude>6.034086</longitude>
+  <latitude>47.230241</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>6.034086,47.230241,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Parque Tierno Galvan s/n Madrid Spain 28045<br><a href=" http://www.planetmad.es/">Web Site</a>]]></description>
+<name><![CDATA[Planetario de Madrid]]></name>
+<LookAt>
+  <longitude>-3.683068</longitude>
+  <latitude>40.388650</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>-3.683068,40.388650,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[viale Santi Baldini 4/a Ravenna RA Italy 48100<br>]]></description>
+<name><![CDATA[Planetario di Ravenna]]></name>
+<LookAt>
+  <longitude>12.208513</longitude>
+  <latitude>44.413084</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>12.208513,44.413084,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[viale Italia, 72 Livorno Italy 57100<br>]]></description>
+<name><![CDATA[Planetario, Accademia Navale]]></name>
+<LookAt>
+  <longitude>10.460012</longitude>
+  <latitude>43.352850</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>10.460012,43.352850,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[via dell'Annunziata, 7 Amelia TR Italy 05022<br>]]></description>
+<name><![CDATA[Planetario, Convento S. Annunziata]]></name>
+<LookAt>
+  <longitude>12.392209</longitude>
+  <latitude>42.532684</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>12.392209,42.532684,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[corso Vittorio Emanuele Palermo PA Italy 90100<br>]]></description>
+<name><![CDATA[Planetario, Istituto Nautico Gioeni Trabia]]></name>
+<LookAt>
+  <longitude>13.443175</longitude>
+  <latitude>38.077452</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>13.443175,38.077452,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[via Nicola Brandi, 11 Brindisi BR Italy 72100<br>]]></description>
+<name><![CDATA[Planetario, Istituto Tecnico Carnaro]]></name>
+<LookAt>
+  <longitude>17.928521</longitude>
+  <latitude>40.644638</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>17.928521,40.644638,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Lungomare Vanvitelli, 76 Ancona Italy 60100<br>]]></description>
+<name><![CDATA[Planetario, Istituto Tecnico Nautico A. Elia]]></name>
+<LookAt>
+  <longitude>13.510088</longitude>
+  <latitude>43.622877</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>13.510088,43.622877,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[piazza F. Cavallotti, 2 Savona Italy 17100<br>]]></description>
+<name><![CDATA[Planetario, Istituto Tecnico Nautico L. Pancaldo]]></name>
+<LookAt>
+  <longitude>8.482978</longitude>
+  <latitude>44.306679</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>8.482978,44.306679,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[viale Italia, 88 La Spezia SP Italy 19100<br>]]></description>
+<name><![CDATA[Planetario, Istituto Tecnico Nautico Nazario Sauro]]></name>
+<LookAt>
+  <longitude>9.836574</longitude>
+  <latitude>44.112684</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>9.836574,44.112684,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[piazza Palermo, 13 Genova Italy 16129<br>]]></description>
+<name><![CDATA[Planetario, Istituto Tecnico Nautico San Giorgio]]></name>
+<LookAt>
+  <longitude>8.952744</longitude>
+  <latitude>44.398763</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>8.952744,44.398763,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Schützenstraße Lübz Germany 19386<br>]]></description>
+<name><![CDATA[Planetarium Lübz]]></name>
+<LookAt>
+  <longitude>12.041974</longitude>
+  <latitude>53.459408</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>12.041974,53.459408,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Wilhelm-Varnholt-Allee 1 Mannheim Germany 68165<br>]]></description>
+<name><![CDATA[Planetarium Mannheim Gemeinnützige Gesellschaft mbH]]></name>
+<LookAt>
+  <longitude>8.493997</longitude>
+  <latitude>49.477538</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>8.493997,49.477538,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[An der Ingenieurschule Senftenberg Germany 01968<br>]]></description>
+<name><![CDATA[Planetarium Senftenberg]]></name>
+<LookAt>
+  <longitude>13.984232</longitude>
+  <latitude>51.522053</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>13.984232,51.522053,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Neckarstraße 47 Stuttgart Germany 70173<br>]]></description>
+<name><![CDATA[Planetarium Stuttgart]]></name>
+<LookAt>
+  <longitude>9.197363</longitude>
+  <latitude>48.790283</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>9.197363,48.790283,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Falkstraße 83 Wittenberg-Lutherstadt Germany 06886<br>]]></description>
+<name><![CDATA[Planetarium Wittenberger]]></name>
+<LookAt>
+  <longitude>12.650625</longitude>
+  <latitude>51.869528</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>12.650625,51.869528,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Alte Chaussee 32 Kiel Germany 24107<br><a href=" http://www.planetarium.fh-kiel.de">Web Site</a>]]></description>
+<name><![CDATA[Planetarium der Fachhochschule Kiel]]></name>
+<LookAt>
+  <longitude>10.072495</longitude>
+  <latitude>54.364921</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>10.072495,54.364921,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Zur Sternwarte 2 Halle-Kanena Germany 06116<br>]]></description>
+<name><![CDATA[Planetarium, Astronomische Station Johannes Kepler]]></name>
+<LookAt>
+  <longitude>12.037873</longitude>
+  <latitude>51.457387</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>12.037873,51.457387,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Rue du Planétarium Cappelle-la-Grande France 59180<br>]]></description>
+<name><![CDATA[Planétarium]]></name>
+<LookAt>
+  <longitude>2.366082</longitude>
+  <latitude>50.996463</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>2.366082,50.996463,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[8, rue des Acadiens Nantes France 44100<br>]]></description>
+<name><![CDATA[Planétarium de Nantes]]></name>
+<LookAt>
+  <longitude>-1.577419</longitude>
+  <latitude>47.202427</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>-1.577419,47.202427,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[18, avenue de la Maladrerie Parthenay France 79200<br>]]></description>
+<name><![CDATA[Planétarium de Parthenay]]></name>
+<LookAt>
+  <longitude>-0.245917</longitude>
+  <latitude>46.636225</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>-0.245917,46.636225,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[18, avenue de la Maladrerie Parthenay France 79200<br>]]></description>
+<name><![CDATA[Planétarium, Constellarium E4]]></name>
+<LookAt>
+  <longitude>-0.245917</longitude>
+  <latitude>46.636225</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>-0.245917,46.636225,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[1, place de la Cathédrale Poitiers France 86000<br>]]></description>
+<name><![CDATA[Planétarium, Espace Mendès-France]]></name>
+<LookAt>
+  <longitude>0.348786</longitude>
+  <latitude>46.581147</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>0.348786,46.581147,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[1, Allee de l'Empereur Anglet France 64600<br>]]></description>
+<name><![CDATA[Planétarium, G.E.R.M.E.A. - S.A.C.B.]]></name>
+<LookAt>
+  <longitude>-1.502438</longitude>
+  <latitude>43.508407</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>-1.502438,43.508407,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[3, Bd. Saint-Exupery Nevers France 58000<br>]]></description>
+<name><![CDATA[Planétarium, I.U.F.M.]]></name>
+<LookAt>
+  <longitude>3.155107</longitude>
+  <latitude>47.004204</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>3.155107,47.004204,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[8 bis, rue de Rosmadec Quimper France 29000<br>]]></description>
+<name><![CDATA[Planétarium, I.U.F.M. de Bretagne]]></name>
+<LookAt>
+  <longitude>-4.115080</longitude>
+  <latitude>47.994060</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>-4.115080,47.994060,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Albert-Köhler-Straße 48 Chemnitz Germany 09122<br>]]></description>
+<name><![CDATA[Schulplanetarium Chemnitz]]></name>
+<LookAt>
+  <longitude>12.889870</longitude>
+  <latitude>50.792739</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>12.889870,50.792739,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Im Thäle 3 Augsburg Germany 86152<br>]]></description>
+<name><![CDATA[Sparkassen-Planetarium Augsburg, Naturmuseum]]></name>
+<LookAt>
+  <longitude>10.895699</longitude>
+  <latitude>48.370902</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>10.895699,48.370902,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Prenzlauer Allee 80 Berlin Germany 10405<br>]]></description>
+<name><![CDATA[Zeiss-Großplanetarium Berlin]]></name>
+<LookAt>
+  <longitude>13.426560</longitude>
+  <latitude>52.542932</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>13.426560,52.542932,0</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<description><![CDATA[Am Planetarium 5 Jena Germany 07743<br>]]></description>
+<name><![CDATA[Zeiss-Planetarium der Ernst-Abbe-Stiftung]]></name>
+<LookAt>
+  <longitude>11.587412</longitude>
+  <latitude>50.931932</latitude>
+  <range>1000.000000000137</range>
+  <tilt>-6.079630270107447e-011</tilt>
+  <heading>-3.446972488456012e-014</heading>
+</LookAt>
+<styleUrl>root://styles#default</styleUrl>
+<Point>
+  <coordinates>11.587412,50.931932,0</coordinates>
+</Point>
+</Placemark>
+
+  </Folder>
+</Document>
+</kml>

@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="title" content="MapBuilder - GoogleMap API Source Code Generator." />
+    <meta name="description" content="MapBuilder.net lets you tag locations on a map and publish it on your own site. Mapping is now easier than ever. It's free." />
+    <meta name="keywords" content="Google Maps API, PHP, AJAX, XML" />
+    <meta name="author" content="Andrew Bidochko. http://www.mapbuilder.net" />
+    <title>Default</title>
+    <style type="text/css">
+      v\:* {
+        behavior:url(#default#VML);
+      }
+      #MapBuilder {font: normal small verdana, arial, helvetica, sans-serif; font-size: 10pt; margin: 0px;}
+      #MapBuilder a {text-decoration: none; color: #0066CC; background-color: transparent;}
+      #MapBuilder a:hover {color: #F60; background-color: transparent;}
+      #MapBuilder h1 {font-weight: bold; font-size: 16pt; color: #369; border-bottom: 2px solid #369;}
+      #MapBuilderIW { width: 350px;}
+      #MapBuilderIWContent {height: 120px; overflow:auto;}
+      #MapBuilderIWCaption {font-weight: bold; font-size: 12pt; color: #369; border-bottom: 2px solid #369;}
+      #MapBuilderIWFooter {margin-top: 5px; font-size: 8pt; }
+      #MapBuilderIWFooterZoom {}
+      #MapBuilderIWDirections{ margin-bottom: 10px;}
+
+
+      #MapBuilderSideBar {float:left; margin-left: 10px; }
+
+    </style>
+
+    <!-- Please, request sign up for your own GMAP KEY at http://www.google.com/apis/maps/signup.html and replace 'GMAPKEY' entry with generated key in the line below. -->
+    <script src="http://maps.google.com/maps?file=api&amp;v=1&amp;key=ABQIAAAAXNSBX6JoRGTpNKpBGgz5tRQCMrxPBNJRrFSqKMtCy1wUhYIQnRRhR6vlOOG-AQKRXqTNNgNEctkEDA" type="text/javascript"></script>
+
+    <script src="http://www.mapbuilder.net/maps?UserName=jimbaldwin123&Map=24663&SideBar=Right" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    //<![CDATA[
+
+    // Global Variables
+    // set map variable
+    var map = "";
+    //set up array of locations
+    var aLocations = new Array;
+    // Storage for sidebar list
+    var listNodeContent = "";
+
+    // Create MabBuilder's "tiny" red marker icon
+    var iconsm = new GIcon();
+    iconsm.image = "http://labs.google.com/ridefinder/images/mm_20_red.png";
+    iconsm.shadow = "http://labs.google.com/ridefinder/images/mm_20_shadow.png";
+    iconsm.iconSize = new GSize(12, 20);
+    iconsm.shadowSize = new GSize(20, 18);
+    iconsm.iconAnchor = new GPoint(6, 20);
+    iconsm.infoWindowAnchor = new GPoint(5, 1);
+
+    // Create MabBuilder's "big" marker icon
+    var iconbig = new GIcon();
+    iconbig.image = "http://www.google.com/mapfiles/marker.png";
+    iconbig.shadow = "http://www.google.com/mapfiles/shadow50.png";
+    iconbig.iconSize = new GSize(20, 34);
+    iconbig.shadowSize = new GSize(37, 34);
+    iconbig.iconAnchor = new GPoint(6, 34);
+    iconbig.infoWindowAnchor = new GPoint(5, 1);
+
+    // Custom Icon
+    var iconcustom = new GIcon(iconbig);
+    iconcustom.shadow = '';
+
+    function onLoad() {
+      map = new GMap(document.getElementById("MapBuilderMap"));
+      MapBuilder = new MapBuilder();
+      map.addMapBuilder(MapBuilder);
+      // Map type: map, satellite, hybrid
+      map.setMapType(map.getMapTypes()[0]);
+      map.addControl(new GLargeMapControl());
+      map.addControl(new GMapTypeControl());
+      // Center the map to the default location
+      map.centerAndZoom(new GPoint(-94.5703125, 39.7071866568), 13);
+
+      // Add locations
+
+      var point = new GPoint(-84.479, 42.725);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(0)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Abrams Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[0] = new Array(marker, "Abrams Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-87.624, 41.86);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(1)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Adler Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[1] = new Array(marker, "Adler Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-102.605, 32.321);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(2)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">AISD Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[2] = new Array(marker, "AISD Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-71.773, 42.254);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(3)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Alden Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[3] = new Array(marker, "Alden Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-71.805, 42.577);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(4)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Alice G. Wallace Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[4] = new Array(marker, "Alice G. Wallace Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-80.154, 41.631);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(5)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Allegheny College Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[5] = new Array(marker, "Allegheny College Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-87.397, 39.39);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(6)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Allen Memorial Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[6] = new Array(marker, "Allen Memorial Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-75.474, 40.577);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(7)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Allentown School District Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[7] = new Array(marker, "Allentown School District Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-84.66, 43.3);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(8)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Alma College Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[8] = new Array(marker, "Alma College Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-73.975, 40.789);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(9)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">American Museum -- Hayden Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[9] = new Array(marker, "American Museum -- Hayden Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-73.881, 40.94);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(10)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Andrus Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[10] = new Array(marker, "Andrus Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-100.458, 31.43);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(11)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Angelo State Univ. Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[11] = new Array(marker, "Angelo State Univ. Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-161.948, 63.45);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(12)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Anthony A. Andrew School Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[12] = new Array(marker, "Anthony A. Andrew School Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-89.998, 29.958);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(13)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Arabi Park Middle School Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[13] = new Array(marker, "Arabi Park Middle School Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-83.79, 42.278);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(14)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Argus Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[14] = new Array(marker, "Argus Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-112.066165, 33.448614);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(15)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Arizona Science Center</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[15] = new Array(marker, "Arizona Science Center", InfoHTML, point);
+
+      var point = new GPoint(-111.932, 33.417);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(16)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Arizona State University Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[16] = new Array(marker, "Arizona State University Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-77.108327, 38.888473);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(17)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Arlington Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[17] = new Array(marker, "Arlington Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-84.294, 37.753);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(18)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Arnim D. Hummel Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[18] = new Array(marker, "Arnim D. Hummel Planetarium", InfoHTML, point);
+
+      var point = new GPoint(-76.59, 38.533);
+      var footerHtml = "<div id=\"MapBuilderIWFooter\"><div id=\"MapBuilderIWFooterZoom\"><a href=\"javascript:void(0)\" onclick=\"ZoomMapTo(19)\">Zoom To</a></div>"   + "</div>";
+
+      // Define Marker
+     iconcustom.iconSize = new GSize(20, 34);
+     iconcustom.image = "http://www.spitzinc.com/images/pic_girl.jpg";
+     InfoHTML = "<div id=\"MapBuilderIW\"><div id=\"MapBuilderIWCaption\">Arthur Storer Planetarium</div><div id=\"MapBuilderIWContent\"></div>" + footerHtml + "</div>";
+     marker = createMarker(point, InfoHTML, iconcustom);
+	  	      map.addOverlay(marker);
+      aLocations[19] = new Array(marker, "Arthur Storer Planetarium", InfoHTML, point);
+      // And finnaly create sidebar
+      createSideBar();
+      // Store sidebar
+      listNodeContent = document.getElementById("LocationList").innerHTML;
+    }
+
+    //]]>
+    </script>
+  </head>
+  <body onload="onLoad()">
+	<div id="MapBuilder">
+      <h1>Default</h1>
+      <p>Auto Created Map</p>
+
+      <div id="MapHolder" style="float:left;">
+        <div id="MapBuilderMap" style="width: 600px; height: 500px;"></div>
+        <!-- Please KEEP RESPECT to MapBuilder.net team and DO NOT DELETE line below if you want to keep MapBuilder service free. -->
+        Created by <a href="http://www.MapBuilder.net">MapBuilder.net</a>.
+      </div>
+
+      <div id="MapBuilderSideBar">
+        <div id="SideBarAction">Map Locations [<a href="javascript:void(0)" onclick="HideLocationList()">-</a>]</div>
+        <div style="height: 480px; overflow:auto;">
+          <ul id="LocationList"></ul>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
