@@ -36,7 +36,7 @@ poster gallery
 
 <div align="center">
 <h1 align="center">Widow/Orphan Control</h1>
-<h2 align="center" style="margin-bottom:0;padding-bottom:0;border: 1px solid black;">formerly</h2>
+<h2 align="center" style="margin-bottom:0;padding-bottom:0;border: 1px solid black;">formerl</h2>
 
 
 <!--<p align="center"><img src="/images/ttbcookie.gif" /></p>-->
