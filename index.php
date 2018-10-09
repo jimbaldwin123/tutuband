@@ -33,6 +33,20 @@ poster gallery
 
 <div id="message">loading...</div>
 <div id ="content" class="invis">
+<div align="center">
+<h1 align="center">Widow/Orphan Control</h1>
+<h2 align="center" style="margin-bottom:0;padding-bottom:0;border: 1px solid black;">formerly</h2>
+
+
+<!--<p align="center"><img src="/images/ttbcookie.gif" /></p>-->
+<!-- <p align="center" style="margin-top:0px;padding-top:0;border: 1px solid black;"></p> -->
+<a href="/"><img src="/images/ttb_sticker_trans.gif" border="0" /></a><br /><img src="/images/hubspot_load5.gif" /></div>
+<div class="btext msg">&quot;The one percent who ruin things for the other 99.&quot;</div>
+<!--
+<div class="btext msg"><form action="sub.php" method="POST">Enter your email address to receive news and announcements:<input type="text" name="email"><input type="submit" name="subscribe" value="subscribe" class="btn"></form></div>
+-->
+<!-- Begin MailChimp Signup Form -->
+<div>
 <form action="//tutuband.us12.list-manage.com/subscribe/post?u=d4309564d63326a0f4e923667&amp;id=0b8a6cc0fd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
     <h2>Subscribe to our mailing list</h2>
 	<table>
@@ -53,20 +67,7 @@ poster gallery
 		</tr>
 	</table>
 </form>
-<div align="center">
-<h1 align="center">Widow/Orphan Control</h1>
-<h2 align="center" style="margin-bottom:0;padding-bottom:0;border: 1px solid black;">formerly</h2>
-
-
-<!--<p align="center"><img src="/images/ttbcookie.gif" /></p>-->
-<!-- <p align="center" style="margin-top:0px;padding-top:0;border: 1px solid black;"></p> -->
-<a href="/"><img src="/images/ttb_sticker_trans.gif" border="0" /></a><br /><img src="/images/hubspot_load5.gif" /></div>
-<div class="btext msg">&quot;The one percent who ruin things for the other 99.&quot;</div>
-<!--
-<div class="btext msg"><form action="sub.php" method="POST">Enter your email address to receive news and announcements:<input type="text" name="email"><input type="submit" name="subscribe" value="subscribe" class="btn"></form></div>
--->
-<!-- Begin MailChimp Signup Form -->
-
+</div>
 <!--End mc_embed_signup-->
 
 <div align="center"><a href="/video/TUTU BAND_300k.wmv" class="atext">New! Video! Pasadena 1980</a><br /></div>
