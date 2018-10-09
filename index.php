@@ -47,7 +47,7 @@ poster gallery
 -->
 <!-- Begin MailChimp Signup Form -->
 <div class='btext msg'>
-<form action="//tutuband.us12.list-manage.com/subscribe/post?u=d4309564d63326a0f4e923667&amp;id=0b8a6cc0fd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+<form action="//tutuband.us12.list-manage.com/subscribe/post?u=d4309564d63326a0f4e923667&amp;id=0b8a6cc0fd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="btext msg validate" target="_blank">
     <h2>Subscribe to our mailing list</h2>
 	<table>
 		<tr>
