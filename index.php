@@ -33,7 +33,26 @@ poster gallery
 
 <div id="message">loading...</div>
 <div id ="content" class="invis">
-
+<form action="//tutuband.us12.list-manage.com/subscribe/post?u=d4309564d63326a0f4e923667&amp;id=0b8a6cc0fd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+    <h2>Subscribe to our mailing list</h2>
+	<table>
+		<tr>
+			<td><label for="mce-FNAME">First Name</label></td>
+			<td><input type="text" name="FNAME" id="mce-FNAME"></td>
+		</tr>
+		<tr>
+			<td><label for="mce-EMAIL">Email Address</label></td>
+			<td><input type="email" name="EMAIL" id="mce-EMAIL" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required></td>
+		</tr>
+		<tr>
+			<td>
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d4309564d63326a0f4e923667_0b8a6cc0fd" tabindex="-1" value=""></div>
+				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+			</td>
+			<td></td>
+		</tr>
+	</table>
+</form>
 <div align="center">
 <h1 align="center">Widow/Orphan Control</h1>
 <h2 align="center" style="margin-bottom:0;padding-bottom:0;border: 1px solid black;">formerly</h2>
@@ -47,39 +66,7 @@ poster gallery
 <div class="btext msg"><form action="sub.php" method="POST">Enter your email address to receive news and announcements:<input type="text" name="email"><input type="submit" name="subscribe" value="subscribe" class="btn"></form></div>
 -->
 <!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{width:300px;margin:auto;clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="//tutuband.us12.list-manage.com/subscribe/post?u=d4309564d63326a0f4e923667&amp;id=0b8a6cc0fd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<h2>Subscribe to our mailing list</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-<div class="mc-field-group">
-	<label for="mce-FNAME">First Name </label>
-	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-</div>
-<div class="mc-field-group">
-	<label for="mce-LNAME">Last Name </label>
-	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-</div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d4309564d63326a0f4e923667_73ce062c2e" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
+
 <!--End mc_embed_signup-->
 
 <div align="center"><a href="/video/TUTU BAND_300k.wmv" class="atext">New! Video! Pasadena 1980</a><br /></div>
